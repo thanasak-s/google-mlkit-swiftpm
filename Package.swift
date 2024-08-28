@@ -15,9 +15,9 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", exact: "2.4.0"),
-    .package(url: "https://github.com/google/GoogleDataTransport.git", exact: "9.4.0"),
-    .package(url: "https://github.com/google/GoogleUtilities.git", exact: "7.13.2"),
-    .package(url: "https://github.com/google/gtm-session-fetcher.git", exact: "3.4.1"),
+    .package(url: "https://github.com/google/GoogleDataTransport.git", exact: "10.1.0"),
+    .package(url: "https://github.com/google/GoogleUtilities.git", exact: "8.0.2"),
+    .package(url: "https://github.com/google/gtm-session-fetcher.git", exact: "3.5.0"),
     .package(url: "https://github.com/firebase/nanopb.git", exact: "2.30910.0"),
   ],
   targets: [
@@ -87,9 +87,7 @@ let package = Package(
         "GoogleUtilitiesComponents",
         .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
         .product(name: "GULEnvironment", package: "GoogleUtilities"),
-        .product(name: "GULISASwizzler", package: "GoogleUtilities"),
         .product(name: "GULLogger", package: "GoogleUtilities"),
-        .product(name: "GULMethodSwizzler", package: "GoogleUtilities"),
         .product(name: "GULNSData", package: "GoogleUtilities"),
         .product(name: "GULNetwork", package: "GoogleUtilities"),
         .product(name: "GULReachability", package: "GoogleUtilities"),
